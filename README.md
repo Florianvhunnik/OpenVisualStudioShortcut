@@ -3,6 +3,9 @@
 ## 🚀 Overview
 Tired of manually opening Visual Studio projects? This guide will help you set up a **'vs .'** command, just like **'code .'** for VS Code, to quickly open your Visual Studio projects from the command line.
 
+## 🎬 Demo
+![VS Shortcut in Action](https://github.com/Florianvhunnik/OpenVisualStudioShortcut/preview.gif)
+
 ## 🔧 Setup Instructions
 
 ### **1. Find Visual Studio Executable Path**
