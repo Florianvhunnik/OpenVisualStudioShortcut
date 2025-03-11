@@ -17,6 +17,8 @@ To simplify the setup, **pick the pre-made batch file** that matches your Visual
 
 After picking the right one, **move the file to `C:\Windows\`** so it can be accessed from anywhere.
 
+❗**IMPORTANT**: Rename "vs-`version`.bat" to "**vs.bat**", otherwise "**vs .**" wouldn't work but for example "**vs-2022 .**" will work.
+
 ### **2. Verify the File Path (Important!)**
 If the command **does not work**, the path to `devenv.exe` in the batch file may not match your Visual Studio installation. To check:
 1. Open **File Explorer** and navigate to:
