@@ -8,14 +8,14 @@ Tired of manually opening Visual Studio projects? This guide will help you set u
 
 ## 🔧 Setup Instructions
 
-### **1. Download the Correct File**
-To simplify the setup, **download the pre-made batch file** that matches your Visual Studio version:
+### **1. Clone or download this repository**
+To simplify the setup, **pick the pre-made batch file** that matches your Visual Studio version:
 
-🔽 **[Download vs-2022.bat](https://github.com/Florianvhunnik/OpenVisualStudioShortcut/raw/main/vs-2022.bat)** *(For Visual Studio 2022)*  
-🔽 **[Download vs-2019.bat](https://github.com/Florianvhunnik/OpenVisualStudioShortcut/raw/main/vs-2019.bat)** *(For Visual Studio 2019)*  
-🔽 **[Download vs-2017.bat](https://github.com/Florianvhunnik/OpenVisualStudioShortcut/raw/main/vs-2017.bat)** *(For Visual Studio 2017)*  
+🔽 Pick **vs-2022.bat** For Visual Studio 2022
+🔽 Pick **vs-2019.bat** For Visual Studio 2019
+🔽 Pick **vs-2017.bat** For Visual Studio 2017
 
-After downloading, **move the file to `C:\Windows\`** so it can be accessed from anywhere.
+After picking the right one, **move the file to `C:\Windows\`** so it can be accessed from anywhere.
 
 ### **2. Verify the File Path (Important!)**
 If the command **does not work**, the path to `devenv.exe` in the batch file may not match your Visual Studio installation. To check:
