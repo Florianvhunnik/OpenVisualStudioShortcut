@@ -8,28 +8,23 @@ Tired of manually opening Visual Studio projects? This guide will help you set u
 
 ## 🔧 Setup Instructions
 
-### **1. Find Visual Studio Executable Path**
-Depending on your edition of Visual Studio, the executable (`devenv.exe`) is located at:
+### **1. Download the Correct File**
+To simplify the setup, **download the pre-made batch file** that matches your Visual Studio version:
 
-- **Visual Studio 2022 (Community)**  
-  ```plaintext
-  C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe
-  ```
-- **For Professional or Enterprise**, replace `Community` with `Professional` or `Enterprise`.
+🔽 **[Download vs-2022.bat](https://github.com/Florianvhunnik/OpenVisualStudioShortcut/raw/main/vs-2022.bat)** *(For Visual Studio 2022)*  
+🔽 **[Download vs-2019.bat](https://github.com/Florianvhunnik/OpenVisualStudioShortcut/raw/main/vs-2019.bat)** *(For Visual Studio 2019)*  
+🔽 **[Download vs-2017.bat](https://github.com/Florianvhunnik/OpenVisualStudioShortcut/raw/main/vs-2017.bat)** *(For Visual Studio 2017)*  
 
-### **2. Create a Batch File (vs.bat)**
-Open **PowerShell as Administrator** and run the following command:
+After downloading, **move the file to `C:\Windows\`** so it can be accessed from anywhere.
 
-```powershell
-New-Item -Path "C:\Windows\vs.bat" -ItemType File -Value '@echo off
-for %%i in ("%cd%\*.sln") do (
-    "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe" "%%i"
-    exit
-)
-
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe" %1'
-'
-```
+### **2. Verify the File Path (Important!)**
+If the command **does not work**, the path to `devenv.exe` in the batch file may not match your Visual Studio installation. To check:
+1. Open **File Explorer** and navigate to:
+   ```plaintext
+   C:\Program Files\Microsoft Visual Studio\<your-version>\Community\Common7\IDE\devenv.exe
+   ```
+2. If the path **does not exist**, check if you installed **Professional or Enterprise**, and adjust the batch file accordingly.
+3. You can manually edit the batch file with Notepad to correct the path.
 
 ### **3. Test the Command**
 1. Open **Command Prompt (`cmd.exe`)** or **PowerShell**.
@@ -51,8 +46,9 @@ for %%i in ("%cd%\*.sln") do (
 
 ## 🛠️ Troubleshooting
 - **Command not recognized?** Restart the terminal or your PC.
-- **Using a different Visual Studio edition?** Adjust the executable path in `vs.bat`.
+- **Using a different Visual Studio edition?** Adjust the executable path in the `.bat` file.
 - **Multiple `.sln` files in a folder?** It will open the first one found.
+- **File path incorrect?** Follow step 2 to verify the correct installation path.
 
 ## 📌 License
 Licensed under the ‘Please Don't Sue Me’ License.😆
