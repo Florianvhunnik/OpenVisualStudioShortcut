@@ -11,9 +11,9 @@ Tired of manually opening Visual Studio projects? This guide will help you set u
 ### **1. Clone or download this repository**
 To simplify the setup, **pick the pre-made batch file** that matches your Visual Studio version:
 
-🔽 Pick **vs-2022.bat** For Visual Studio 2022
-🔽 Pick **vs-2019.bat** For Visual Studio 2019
-🔽 Pick **vs-2017.bat** For Visual Studio 2017
+- Pick **vs-2022.bat** For Visual Studio 2022
+- Pick **vs-2019.bat** For Visual Studio 2019
+- Pick **vs-2017.bat** For Visual Studio 2017
 
 After picking the right one, **move the file to `C:\Windows\`** so it can be accessed from anywhere.
 
