@@ -1,4 +1,3 @@
-@echo off
 set "VS_PATH=C:\Program Files\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe"
 
 if not exist "%VS_PATH%" (
@@ -8,7 +7,13 @@ if not exist "%VS_PATH%" (
 
 for %%i in ("%cd%\*.sln") do (
     start "" "%VS_PATH%" "%%i"
-    exit
+    goto :eof
 )
 
-start "" "%VS_PATH%" %1
+if not "%~1"=="" (
+    start "" "%VS_PATH%" "%~1"
+    goto :eof
+)
+
+echo Error: No solution file found in the current directory and no argument provided.
+exit /b 1
